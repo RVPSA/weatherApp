@@ -8,3 +8,9 @@
     --shadowdark : rgba(0,0,0,0.3);
     --shadowlight : rgba(255,255,255,0.1);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
