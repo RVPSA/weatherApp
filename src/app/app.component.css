@@ -28,7 +28,7 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 100px;
+    height: 100%;
     /* background-color: var(--shadowdark); */
     display: flex;
     flex-direction: column;
@@ -36,3 +36,16 @@
     justify-content: center;
 
 }
+
+.location{
+    color: var(--white);
+    text-align: center;
+    font-size: 1.2em;
+}
+.temperature{
+    color: var(--white);
+    text-align: center;
+    font-size: 5em;
+    font-weight: 900;
+}
+
