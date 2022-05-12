@@ -4,5 +4,5 @@
     height: 80vh;
     background-color: var(--blue2);
     border-radius: 20px;
-    box-shadow: 10px 10px 10px var(--shadowdark);
+    box-shadow: 10px 10px 10px var(--shadowdark); /* insde the brackets go to right,down etc*/
 }
