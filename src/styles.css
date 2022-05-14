@@ -26,7 +26,3 @@ body{
     justify-content: center; /*centered items from lhs(goto RHS,lhs->rhs)*/
     align-items: center; /*centered items from top(top -> bottom)*/
  }
-
- .moreInformation{
-     color: var(--white);
- }
