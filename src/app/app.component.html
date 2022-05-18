@@ -29,7 +29,7 @@
           <span>Min</span>
         </div>
         <div class="blockvalue">
-          {{weatherdata.main.temp_min}}
+          {{weatherdata.main.temp_min | number:'1.0-0'}}°C
         </div>
       </div>
 
@@ -39,7 +39,7 @@
           <span>Max</span>
         </div>
         <div class="blockvalue">
-          {{weatherdata.main.temp_max}}
+          {{weatherdata.main.temp_max | number:'1.0-0'}}°C
         </div>
       </div>
 
