@@ -11,7 +11,11 @@ export class AppComponent implements OnInit {
   constructor(private weatherService: WeatherServiceService){} 
   
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.weatherService.getweatherData('Wellington').subscribe({
+      next:(response)=>{
+        console.log(response);
+      }
+    });
   }
   title = 'weatherApp';
 }
