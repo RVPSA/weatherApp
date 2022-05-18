@@ -10,7 +10,7 @@ import { WeatherServiceService } from './services/weather-service.service';
 export class AppComponent implements OnInit {
 
   constructor(private weatherService: WeatherServiceService){} 
-  
+cityName?:string;
 weatherdata?:weatherData;
 
   ngOnInit(): void {
@@ -21,5 +21,8 @@ weatherdata?:weatherData;
       }
     );
   }
+
+  onsubmit(){}
+
   title = 'weatherApp';
 }
