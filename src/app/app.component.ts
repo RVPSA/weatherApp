@@ -14,12 +14,12 @@ export class AppComponent implements OnInit {
 weatherdata?:weatherData;
 
   ngOnInit(): void {
-    this.weatherService.getweatherData('Wellington').subscribe({
-      next:(response)=>{
+    this.weatherService.getweatherData('Wellington').subscribe(
+      (response)=>{
         this.weatherdata=response;
         console.log(response);
       }
-    });
+    );
   }
   title = 'weatherApp';
 }
