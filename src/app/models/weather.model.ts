@@ -1,4 +1,4 @@
-declare module weatherData {
+
 
     export interface Coord {
         lon: number;
@@ -38,7 +38,7 @@ declare module weatherData {
         sunset: number;
     }
 
-    export interface RootObject {
+    export interface weatherData {
         coord: Coord;
         weather: Weather[];
         base: string;
@@ -53,6 +53,4 @@ declare module weatherData {
         name: string;
         cod: number;
     }
-
-}
 
