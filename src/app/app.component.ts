@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherServiceService } from './services/weather-service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  constructor(private weatherService: WeatherServiceService){} 
+  
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
