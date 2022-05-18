@@ -1,1 +1,150 @@
+<div class="search">
+  <form #form="ngForm" (submit)="onsubmit()">
+    <input type="text" placeholder="Search City" name="city" [(ngModel)]="cityName">
+  </form>
+</div>
+
+<div class="container" *ngIf="weatherdata">
+  <div class="upperData">
+    <img src="../assets/cold2.jpg" *ngIf="weatherdata.main.temp<15">
+    <img src="../assets/hot2.jpg" *ngIf="weatherdata.main.temp>=15">
+  
+    <div class="weatherData">
+      <div class="location">{{weatherdata.name}}</div>
+      <div class="temperature">{{weatherdata.main.temp | number:'1.0-0'}}°C</div>
+    </div>
+
+  </div>
+
+  <div class="lowerData">
+    <div class="moreInformation">
+      More Information
+    </div>
+
+    <div class="moreInfoContainer">
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/min.png">
+          <span>Min</span>
+        </div>
+        <div class="blockvalue">
+          {{weatherdata.main.temp_min | number:'1.0-0'}}°C
+        </div>
+      </div>
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/max.png">
+          <span>Max</span>
+        </div>
+        <div class="blockvalue">
+          {{weatherdata.main.temp_max | number:'1.0-0'}}°C
+        </div>
+      </div>
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/humidity.png">
+          <span>Humidity</span>
+        </div>
+        <div class="blockvalue">
+          {{weatherdata.main.humidity}}%
+        </div>
+      </div>
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/windy.png">
+          <span>Wind</span>
+        </div>
+        <div class="blockvalue">
+          {{weatherdata.wind.speed}}km/h
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<!-- <div class="container">
+  <div class="upperData">
+    <img src="../assets/cold2.jpg" *ngIf="14<15">
+    <img src="../assets/hot2.jpg" *ngIf="14>=15">
+  
+    <div class="weatherData">
+      <div class="location">Nuwara Eliya</div>
+      <div class="temperature">{{14.00 | number:'1.0-0'}}°C</div>
+    </div>
+
+  </div>
+
+  <div class="lowerData">
+    <div class="moreInformation">
+      More Information
+    </div>
+
+    <div class="moreInfoContainer">
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/min.png">
+          <span>Min</span>
+        </div>
+        <div class="blockvalue">
+          10°C
+        </div>
+      </div>
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/max.png">
+          <span>Max</span>
+        </div>
+        <div class="blockvalue">
+          20°C
+        </div>
+      </div>
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/humidity.png">
+          <span>Humidity</span>
+        </div>
+        <div class="blockvalue">
+          75%
+        </div>
+      </div>
+
+      <div class="infoblock">
+        <div class="blocklabel">
+          <img src="../assets/windy.png">
+          <span>Wind</span>
+        </div>
+        <div class="blockvalue">
+          35km/h
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+</div> -->
+
+
+
 <router-outlet></router-outlet>

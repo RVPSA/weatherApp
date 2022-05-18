@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --blue1 : #3C429E;
+    --blue2 : #4C52AD;
+    --yellow1 : #FAC742;
+    --white : #fff;
+    --grey1 : #EDEDED;
+    --shadowdark : rgba(0,0,0,0.3);
+    --shadowlight : rgba(255,255,255,0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Papyrus; 
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue1); /*getvariable value */
+
+    display: flex;
+    justify-content: center; /*centered items from lhs(goto RHS,lhs->rhs)*/
+    align-items: center; /*centered items from top(top -> bottom)*/
+ }
