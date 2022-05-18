@@ -6,5 +6,5 @@ import { Injectable } from '@angular/core';
 })
 export class WeatherServiceService {
 
-  constructor( private http: HttpClient) { }
+  constructor( private http: HttpClient) {}
 }
