@@ -106,3 +106,19 @@
     align-items: center;
     color: var(--white);
 }
+
+.search{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.search input{
+    background-color: var(--shadowdark);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+    color: var(--grey1);
+    width: 100%;
+}
